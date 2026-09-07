@@ -1,0 +1,24 @@
+[21:23:17] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.11 with Fabric Loader 0.19.3
+[21:23:17] [main/DEBUG] (FabricLoader/GamePatch) Found game constructor: net.minecraft.client.main.Main -> net.minecraft.client.MinecraftClient
+[21:23:17] [main/DEBUG] (FabricLoader/GamePatch) Patching game constructor <init>(Lnet/minecraft/client/RunArgs;)V
+[21:23:17] [main/DEBUG] (FabricLoader/GamePatch) Run directory field is thought to be net/minecraft/client/MinecraftClient/runDirectory
+[21:23:17] [main/DEBUG] (FabricLoader/GamePatch) Applying brand name hook to net/minecraft/client/ClientBrandRetriever::getClientModName
+[21:23:17] [main/DEBUG] (FabricLoader/GamePatch) Applying brand name hook to net/minecraft/server/MinecraftServer::getServerModName
+[21:23:17] [main/DEBUG] (FabricLoader/GamePatch) Patched 3 classs
+[21:23:17] [main/DEBUG] (FabricLoader/Discovery) Mod discovery time: 17,5 ms
+[21:23:17] [main/WARN] (FabricLoader/Resolution) Mod resolution failed
+[21:23:17] [main/INFO] (FabricLoader/Resolution) Immediate reason: [HARD_DEP_INCOMPATIBLE_PRESELECTED fabric-api 0.114.0+1.21.4 {depends minecraft @ [>=1.21.4- <1.21.5-]}, ROOT_FORCELOAD_SINGLE fabric-api 0.114.0+1.21.4]
+[21:23:17] [main/INFO] (FabricLoader/Resolution) Reason: [HARD_DEP fabric-api 0.114.0+1.21.4 {depends minecraft @ [>=1.21.4- <1.21.5-]}]
+[21:23:17] [main/INFO] (FabricLoader/Resolution) Fix: add [], remove [], replace [[minecraft 1.21.11] -> add:minecraft 1.21.4- ([[1.21.4-,1.21.5-)])]
+[21:23:17] [main/ERROR] (FabricLoader) Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Replace 'Minecraft' (minecraft) 1.21.11 with any version between 1.21.4- (inclusive) and 1.21.5- (exclusive).
+More details:
+	 - Mod 'Fabric API' (fabric-api) 0.114.0+1.21.4 requires any version between 1.21.4- (inclusive) and 1.21.5- (exclusive) of 'Minecraft' (minecraft), but only the wrong version is present: 1.21.11!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:202)
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:142)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:66)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)

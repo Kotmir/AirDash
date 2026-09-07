@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "airdash",
+  "version": "1.0.0",
+  "name": "AirDash",
+  "description": "Double jump mod with customizable particle trails!",
+  "authors": [
+    "Kotmir"
+  ],
+  "contact": {
+    "homepage": "https://kotmir.tech",
+    "sources": "https://discord.gg/kotmiks"
+  },
+  "license": "MIT",
+  "icon": "assets/airdash/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tech.kotmir.airdash.AirDashClient"
+    ],
+    "modmenu": [
+      "tech.kotmir.airdash.config.AirDashModMenu"
+    ]
+  },
+  "mixins": [
+    "airdash.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "*",
+    "java": ">=21"
+  }
+}
