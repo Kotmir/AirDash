@@ -3,7 +3,7 @@
 # ⚡ AirDash
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Minecraft-1.20.1%2B-2EA44F?style=for-the-badge&logo=minecraft&logoColor=white" alt="Minecraft Version" />
+  <img src="https://img.shields.io/badge/Minecraft-1.21.11%2B-2EA44F?style=for-the-badge&logo=minecraft&logoColor=white" alt="Minecraft Version" />
   <img src="https://img.shields.io/badge/Loader-Fabric-1F8B4D?style=for-the-badge&logo=fabric&logoColor=white" alt="Fabric Loader" />
   <img src="https://img.shields.io/badge/Java-21-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21" />
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License" />
